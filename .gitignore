@@ -1,0 +1,33 @@
+node_modules/
+.next/
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets: every .env file (Next.js also loads .env.production, .env.development…), except examples
+.env*
+!.env.example
+!**/.env.example
+
+# foundry
+contracts/out/
+contracts/cache/
+# deployment logs (keep local runs out; `git add -f` the Aevum 44005 one if you want it in your repo)
+contracts/broadcast/
+
+.DS_Store
+
+# local deployments (anvil / make fork); deployments/44005.json is the real Aevum one and is committed
+deployments/31337.json
+deployments/440050.json
+
+# AI tooling / agent instruction files
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.claude/
+.cursor/
+.cursorrules
+.codex/
+.aider*
+.windsurf/
+.github/copilot-instructions.md
